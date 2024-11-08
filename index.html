@@ -1,0 +1,215 @@
+<html>
+ <head>
+  <title>
+   Facebook-like Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #18191A;
+            color: #E4E6EB;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #242526;
+            padding: 10px 20px;
+        }
+        .navbar i {
+            color: #B0B3B8;
+            font-size: 24px;
+        }
+        .navbar i.active {
+            color: #2D88FF;
+        }
+        .post-box {
+            background-color: #242526;
+            padding: 10px;
+            margin: 10px 20px;
+            border-radius: 8px;
+        }
+        .post-box input {
+            width: 100%;
+            padding: 10px;
+            background-color: #3A3B3C;
+            border: none;
+            border-radius: 20px;
+            color: #E4E6EB;
+        }
+        .post-box .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .post-box .actions div {
+            display: flex;
+            align-items: center;
+            color: #B0B3B8;
+        }
+        .post-box .actions div i {
+            margin-right: 5px;
+        }
+        .stories {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 20px;
+        }
+        .story {
+            background-color: #3A3B3C;
+            border-radius: 10px;
+            margin-right: 10px;
+            width: 100px;
+            text-align: center;
+            color: #E4E6EB;
+        }
+        .story img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .story .add-story {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #3A3B3C;
+            border-radius: 10px 10px 0 0;
+        }
+        .story .add-story i {
+            font-size: 24px;
+            color: #2D88FF;
+        }
+        .post {
+            background-color: #242526;
+            padding: 10px;
+            margin: 10px 20px;
+            border-radius: 8px;
+        }
+        .post .header {
+            display: flex;
+            align-items: center;
+        }
+        .post .header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .post .header .name {
+            font-weight: bold;
+        }
+        .post .header .time {
+            color: #B0B3B8;
+            font-size: 12px;
+        }
+        .post .content {
+            margin-top: 10px;
+        }
+        .post .content img {
+            width: 100%;
+            border-radius: 8px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <i class="fas fa-home active">
+   </i>
+   <i class="fas fa-tv">
+   </i>
+   <i class="fas fa-store">
+   </i>
+   <i class="fas fa-users">
+   </i>
+   <i class="fas fa-bell">
+   </i>
+  </div>
+  <div class="post-box">
+   <input placeholder="What are you thinking about?" type="text"/>
+   <div class="actions">
+    <div>
+     <i class="fas fa-video">
+     </i>
+     Live Video
+    </div>
+    <div>
+     <i class="fas fa-photo-video">
+     </i>
+     Photo/Video
+    </div>
+    <div>
+     <i class="fas fa-smile">
+     </i>
+     Feeling/Activity
+    </div>
+   </div>
+  </div>
+  <div class="stories">
+   <div class="story">
+    <div class="add-story">
+     <i class="fas fa-plus">
+     </i>
+    </div>
+    <div>
+     Story
+    </div>
+   </div>
+   <div class="story">
+    <img alt="Story image 1" height="100" src="https://storage.googleapis.com/a1aa/image/Y3ZVVMaOFhaDEtBnHjYvfoeB9tBdaydfwXuV0m88gNosXvdnA.jpg" width="100"/>
+    <div>
+     Srey Phors Vorn
+    </div>
+   </div>
+   <div class="story">
+    <img alt="Story image 2" height="100" src="https://storage.googleapis.com/a1aa/image/Vg7X0PFqWfy4a6yGJIecIHBQO9xZ785J7zRtKaRE4zt3r3uTA.jpg" width="100"/>
+    <div>
+     RE AK
+    </div>
+   </div>
+   <div class="story">
+    <img alt="Story image 3" height="100" src="https://storage.googleapis.com/a1aa/image/UWBRDDiyCfwCESfIP0XVRtqeWnOgr2dOGJ3aBWcgoUr4XvdnA.jpg" width="100"/>
+    <div>
+     Kan Theary
+    </div>
+   </div>
+   <div class="story">
+    <img alt="Story image 4" height="100" src="https://storage.googleapis.com/a1aa/image/Cif1GXFTaSXlUyfkPo80UYvameuWf2uejYDcsDfPSbROe1b3JA.jpg" width="100"/>
+    <div>
+     Sopeak Takeo
+    </div>
+   </div>
+  </div>
+  <div class="post">
+   <div class="header">
+    <img alt="Profile picture" height="40" src="https://storage.googleapis.com/a1aa/image/5BjNoJQGzrZQCF5EEdQo2i1qUjsEqzDe161nQxiEP3l91b3JA.jpg" width="40"/>
+    <div>
+     <div class="name">
+      Sovila Srun
+     </div>
+     <div class="time">
+      5 hrs ·
+      <i class="fas fa-globe">
+      </i>
+     </div>
+    </div>
+   </div>
+   <div class="content">
+    <p>
+     #Scholarship Announcement: The Institute of Technology of Cambodia is offering scholarships for the following programs for the academic year 2023-2024:
+    </p>
+    <ul>
+     <li>
+      Telecommunication and Electronic Engineering
+     </li>
+     <li>
+      Data Science and Engineering
+     </li>
+    </ul>
+    <img alt="Scholarship announcement image" height="200" src="https://storage.googleapis.com/a1aa/image/P2Uze0e6J2q5sEtUgGrXCfRDegcXVYenLslJmvumSMOMf6t7E.jpg" width="500"/>
+   </div>
+  </div>
+ </body>
+</html>
